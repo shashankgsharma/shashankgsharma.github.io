@@ -43,9 +43,3 @@ The objective was to build real-time pipelines for **accident detection in strea
 - Reduced latency by **8%** through pipeline optimizations.
 
 ---
-
-## Links
-
-- GitHub: ADD_GITHUB_LINK_HERE  
-- Publication/Report: ADD_PUBLICATION_LINK_HERE  
-

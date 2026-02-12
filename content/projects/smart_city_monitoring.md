@@ -55,7 +55,4 @@ and is optimized for real-time deployment.
 
 ## Links
 
-- arXiv Paper: ADD_ARXIV_LINK_HERE  
-- PDF: ADD_PDF_LINK_HERE  
-- Code: ADD_GITHUB_LINK_HERE  
-
+- arXiv Paper: https://arxiv.org/abs/2407.03305

@@ -43,5 +43,4 @@ The goal was to improve controllable summarization by integrating classifier gui
 ## Links
 
 - GitHub: www.github.com/shashank23088/nlp_project  
-- Publication/Report: ADD_PUBLICATION_LINK_HERE  
 

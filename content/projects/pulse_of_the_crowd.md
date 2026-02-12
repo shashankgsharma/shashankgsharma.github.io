@@ -48,7 +48,4 @@ The goal was to combine visual and acoustic cues for robust crowd monitoring.
 
 ## Links
 
-- Paper (IEEE): ADD_IEEE_LINK_HERE  
-- PDF: ADD_PDF_LINK_HERE  
-- Code: ADD_GITHUB_LINK_HERE  
-
+- Paper (IEEE MIPR'2024): https://ieeexplore.ieee.org/document/10707791 

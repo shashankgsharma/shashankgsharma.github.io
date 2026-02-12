@@ -40,6 +40,4 @@ The agent learns paths through structured graph environments using policy gradie
 
 ## Links
 
-- GitHub: ADD_GITHUB_LINK_HERE  
-- Publication/Report: ADD_PUBLICATION_LINK_HERE  
-
+- GitHub: https://github.com/Junaidfayazlone/RL-Project
