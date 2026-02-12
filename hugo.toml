@@ -28,7 +28,7 @@ theme = "PaperMod"
 [params.profileMode]
   enabled = true
   title = "Shashank Sharma"
-  subtitle = "AI/ML Researcher | NLP | Summarization | Incoming @ TCS Research"
+  subtitle = "AI Research | Neuromorphic Computing | RnD @ TCS Research | ML | DL | NLP | GenAI | CV | RL"
 
   [[params.profileMode.buttons]]
     name = "Resume"
