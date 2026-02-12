@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Shashank Sharma</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on Shashank Sharma</description>
+    <generator>Hugo -- 0.155.3</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 13 Feb 2026 00:03:46 +0530</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Publications</title>
+      <link>http://localhost:1313/publications/</link>
+      <pubDate>Fri, 13 Feb 2026 00:03:46 +0530</pubDate>
+      <guid>http://localhost:1313/publications/</guid>
+      <description>&lt;h2 id=&#34;perspective-aware-summarization-in-healthcare-qa&#34;&gt;Perspective-Aware Summarization in Healthcare Q&amp;amp;A&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Shashank Sharma&lt;/strong&gt;, et al.&lt;br&gt;
+&lt;em&gt;Work in progress / Preprint&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Adapter-based LLaMA models for controlled summarization&lt;/li&gt;
+&lt;li&gt;Classifier-guided + energy-based loss integration&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;[PDF Coming Soon]&lt;br&gt;
+&lt;a href=&#34;https://github.com/shashank23088/nlp_project&#34;&gt;Code&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;dual-adapter-models-for-perspective-control&#34;&gt;Dual Adapter Models for Perspective Control&lt;/h2&gt;
+&lt;p&gt;Research project exploring multi-adapter generation for healthcare summarization.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;TinyLLaMA + RoBERTa classifier guidance&lt;/li&gt;
+&lt;li&gt;Perspective-specific adapters&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/shashank23088/nlp_project&#34;&gt;GitHub&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Life Rn</title>
+      <link>http://localhost:1313/posts/life-rn/</link>
+      <pubDate>Thu, 12 Feb 2026 23:51:37 +0530</pubDate>
+      <guid>http://localhost:1313/posts/life-rn/</guid>
+      <description>&lt;p&gt;Life Sucks.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Projects</title>
+      <link>http://localhost:1313/projects/</link>
+      <pubDate>Thu, 12 Feb 2026 23:49:47 +0530</pubDate>
+      <guid>http://localhost:1313/projects/</guid>
+      <description>&lt;h2 id=&#34;perspective-aware-summarization&#34;&gt;Perspective-Aware Summarization&lt;/h2&gt;
+&lt;p&gt;Built healthcare Q&amp;amp;A summarization models with adapter-based LLaMA.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Tech: PyTorch, HuggingFace, LoRA&lt;/li&gt;
+&lt;li&gt;Focus: Controlled generation across perspectives&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/shashank23088/nlp_project&#34;&gt;GitHub Link&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>About</title>
+      <link>http://localhost:1313/about/</link>
+      <pubDate>Thu, 12 Feb 2026 23:43:49 +0530</pubDate>
+      <guid>http://localhost:1313/about/</guid>
+      <description>&lt;p&gt;Hi, I am Shashank Sharma.
+I do research about problem and build solutions for them.
+Currently working as a Research Engineer at TCS Research, Kolkata; on the abstraction of different neuromorphic architectures for sensing and visual computing domains.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
