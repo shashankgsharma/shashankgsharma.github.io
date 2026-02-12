@@ -6,14 +6,42 @@
     <description>Recent content in Projects on Shashank Sharma</description>
     <generator>Hugo -- 0.155.3</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 13 Feb 2026 01:35:22 +0530</lastBuildDate>
+    <lastBuildDate>Tue, 01 Apr 2025 00:00:00 +0530</lastBuildDate>
     <atom:link href="http://localhost:1313/projects/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Perspective-Aware Summarization</title>
-      <link>http://localhost:1313/projects/perspective-aware-summarization/</link>
-      <pubDate>Fri, 13 Feb 2026 01:35:22 +0530</pubDate>
-      <guid>http://localhost:1313/projects/perspective-aware-summarization/</guid>
-      <description>Healthcare Q&amp;amp;A summarization with adapter-based LLaMA.</description>
+      <title>Knowledge-Augmented LLMs for Intent-Based Summarization</title>
+      <link>http://localhost:1313/projects/knowledge_augmented_llms/</link>
+      <pubDate>Tue, 01 Apr 2025 00:00:00 +0530</pubDate>
+      <guid>http://localhost:1313/projects/knowledge_augmented_llms/</guid>
+      <description>Perspective-based summarization using classifier-guided and energy-based losses with PEFT tuning.</description>
+    </item>
+    <item>
+      <title>Deep Reinforcement Learning for Autonomous Navigation</title>
+      <link>http://localhost:1313/projects/deep_rl_navigation/</link>
+      <pubDate>Sun, 01 Dec 2024 00:00:00 +0530</pubDate>
+      <guid>http://localhost:1313/projects/deep_rl_navigation/</guid>
+      <description>Reinforcement learning agent for navigating knowledge graphs using LSTM policies and REINFORCE.</description>
+    </item>
+    <item>
+      <title>Accident Detection using Video Streaming</title>
+      <link>http://localhost:1313/projects/accident_detection/</link>
+      <pubDate>Sun, 01 Sep 2024 00:00:00 +0530</pubDate>
+      <guid>http://localhost:1313/projects/accident_detection/</guid>
+      <description>Real-time accident detection pipelines using YOLO, DeepSORT, and multimodal LLaVA-NeXT.</description>
+    </item>
+    <item>
+      <title>Advanced Smart City Monitoring: Real-Time Identification of Indian Citizen Attributes</title>
+      <link>http://localhost:1313/projects/smart_city_monitoring/</link>
+      <pubDate>Mon, 01 Jul 2024 00:00:00 +0530</pubDate>
+      <guid>http://localhost:1313/projects/smart_city_monitoring/</guid>
+      <description>Real-time person attribute recognition using pretrained transformers + YOLOv10 deployment.</description>
+    </item>
+    <item>
+      <title>Pulse of the Crowd: Quantifying Crowd Energy through Audio and Video Analysis</title>
+      <link>http://localhost:1313/projects/pulse_of_the_crowd/</link>
+      <pubDate>Sat, 01 Jun 2024 00:00:00 +0530</pubDate>
+      <guid>http://localhost:1313/projects/pulse_of_the_crowd/</guid>
+      <description>Multimodal crowd energy estimation using STEERER for density + CLAP audio embeddings for noise classification.</description>
     </item>
   </channel>
 </rss>

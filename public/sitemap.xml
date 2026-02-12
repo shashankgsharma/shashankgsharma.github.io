@@ -2,28 +2,123 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/projects/perspective-aware-summarization/</loc>
-    <lastmod>2026-02-13T01:35:22+05:30</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/projects/</loc>
-    <lastmod>2026-02-13T01:35:22+05:30</lastmod>
-  </url><url>
     <loc>http://localhost:1313/publications/</loc>
     <lastmod>2026-02-13T00:03:46+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2026-02-13T00:03:46+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/snntorch-basics-tutorial/</loc>
+    <lastmod>2026-02-13T00:00:00+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/neuromorphic/</loc>
+    <lastmod>2026-02-13T00:00:00+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/</loc>
+    <lastmod>2026-02-13T00:00:00+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/pytorch/</loc>
+    <lastmod>2026-02-13T00:00:00+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/research/</loc>
+    <lastmod>2026-02-13T00:00:00+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/snntorch/</loc>
+    <lastmod>2026-02-13T00:00:00+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/spiking-neural-networks/</loc>
+    <lastmod>2026-02-13T00:00:00+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2026-02-13T00:00:00+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/neuromorphic-computing/</loc>
+    <lastmod>2026-02-13T00:00:00+05:30</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/life-rn/</loc>
     <lastmod>2026-02-12T23:51:37+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2026-02-12T23:51:37+05:30</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/</loc>
+    <loc>http://localhost:1313/about/</loc>
     <lastmod>2026-02-12T23:43:49+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/home/</loc>
+    <loc>http://localhost:1313/tags/healthcare-ai/</loc>
+    <lastmod>2025-04-01T00:00:00+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/projects/knowledge_augmented_llms/</loc>
+    <lastmod>2025-04-01T00:00:00+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/llms/</loc>
+    <lastmod>2025-04-01T00:00:00+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/nlp/</loc>
+    <lastmod>2025-04-01T00:00:00+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/peft/</loc>
+    <lastmod>2025-04-01T00:00:00+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/projects/</loc>
+    <lastmod>2025-04-01T00:00:00+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/summarization/</loc>
+    <lastmod>2025-04-01T00:00:00+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/autonomous-navigation/</loc>
+    <lastmod>2024-12-01T00:00:00+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/projects/deep_rl_navigation/</loc>
+    <lastmod>2024-12-01T00:00:00+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/knowledge-graphs/</loc>
+    <lastmod>2024-12-01T00:00:00+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/lstm/</loc>
+    <lastmod>2024-12-01T00:00:00+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/reinforcement-learning/</loc>
+    <lastmod>2024-12-01T00:00:00+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/projects/accident_detection/</loc>
+    <lastmod>2024-09-01T00:00:00+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/computer-vision/</loc>
+    <lastmod>2024-09-01T00:00:00+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/deepsort/</loc>
+    <lastmod>2024-09-01T00:00:00+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/multimodal-ai/</loc>
+    <lastmod>2024-09-01T00:00:00+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/video-analytics/</loc>
+    <lastmod>2024-09-01T00:00:00+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/yolo/</loc>
+    <lastmod>2024-09-01T00:00:00+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/projects/smart_city_monitoring/</loc>
+    <lastmod>2024-07-01T00:00:00+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/person-attribute-recognition/</loc>
+    <lastmod>2024-07-01T00:00:00+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/smart-city-ai/</loc>
+    <lastmod>2024-07-01T00:00:00+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/transformers/</loc>
+    <lastmod>2024-07-01T00:00:00+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/audio-video-analysis/</loc>
+    <lastmod>2024-06-01T00:00:00+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/crowd-monitoring/</loc>
+    <lastmod>2024-06-01T00:00:00+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/multimodal-learning/</loc>
+    <lastmod>2024-06-01T00:00:00+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/projects/pulse_of_the_crowd/</loc>
+    <lastmod>2024-06-01T00:00:00+05:30</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/</loc>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
   </url>
 </urlset>

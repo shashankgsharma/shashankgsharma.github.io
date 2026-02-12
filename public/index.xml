@@ -1,20 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Home on Shashank Sharma</title>
+    <title>Shashank Sharma</title>
     <link>http://localhost:1313/</link>
-    <description>Recent content in Home on Shashank Sharma</description>
+    <description>Recent content on Shashank Sharma</description>
     <generator>Hugo -- 0.155.3</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 13 Feb 2026 01:35:22 +0530</lastBuildDate>
+    <lastBuildDate>Fri, 13 Feb 2026 00:03:46 +0530</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Perspective-Aware Summarization</title>
-      <link>http://localhost:1313/projects/perspective-aware-summarization/</link>
-      <pubDate>Fri, 13 Feb 2026 01:35:22 +0530</pubDate>
-      <guid>http://localhost:1313/projects/perspective-aware-summarization/</guid>
-      <description>Healthcare Q&amp;amp;A summarization with adapter-based LLaMA.</description>
-    </item>
     <item>
       <title>Publications</title>
       <link>http://localhost:1313/publications/</link>
@@ -39,6 +32,20 @@
 &lt;p&gt;&lt;a href=&#34;https://github.com/shashank23088/nlp_project&#34;&gt;GitHub&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Getting Started with SNNTorch: A Beginner Tutorial</title>
+      <link>http://localhost:1313/posts/snntorch-basics-tutorial/</link>
+      <pubDate>Fri, 13 Feb 2026 00:00:00 +0530</pubDate>
+      <guid>http://localhost:1313/posts/snntorch-basics-tutorial/</guid>
+      <description>A practical beginner-friendly tutorial on building Spiking Neural Networks using SNNTorch.</description>
+    </item>
+    <item>
+      <title>What is Neuromorphic Computing?</title>
+      <link>http://localhost:1313/posts/neuromorphic-computing/</link>
+      <pubDate>Fri, 13 Feb 2026 00:00:00 +0530</pubDate>
+      <guid>http://localhost:1313/posts/neuromorphic-computing/</guid>
+      <description>A short introduction to neuromorphic computing and why it matters for the future of AI.</description>
+    </item>
+    <item>
       <title>Life Rn</title>
       <link>http://localhost:1313/posts/life-rn/</link>
       <pubDate>Thu, 12 Feb 2026 23:51:37 +0530</pubDate>
@@ -46,20 +53,64 @@
       <description>&lt;p&gt;Life Sucks.&lt;/p&gt;</description>
     </item>
     <item>
-      <title></title>
-      <link>http://localhost:1313/home/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/home/</guid>
-      <description>&lt;h2 id=&#34;research-interests&#34;&gt;Research Interests&lt;/h2&gt;
+      <title>About Me</title>
+      <link>http://localhost:1313/about/</link>
+      <pubDate>Thu, 12 Feb 2026 23:43:49 +0530</pubDate>
+      <guid>http://localhost:1313/about/</guid>
+      <description>&lt;p&gt;Hi, I am Shashank Sharma.
+This is me in short:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Natural Language Processing (NLP)&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Perspective-aware and controllable summarization&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Efficient adaptation of large language models (LoRA, Adapters)&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Healthcare AI and question answering systems&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Neuromorphic computing and brain-inspired learning&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;I do research about problem and build solutions for them.&lt;/li&gt;
+&lt;li&gt;Currently working as a Research Engineer at TCS Research, Kolkata; on the abstraction of different neuromorphic architectures for sensing and visual computing domains.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;recent-posts&#34;&gt;Recent Posts&lt;/h2&gt;</description>
+&lt;h2 id=&#34;research-interests&#34;&gt;Research Interests&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Perspective-aware summarization&lt;/strong&gt; in healthcare NLP&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Efficient LLM adaptation&lt;/strong&gt; (Adapters, LoRA)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Controlled generation&lt;/strong&gt; with classifier-guided training&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Neuromorphic computing&lt;/strong&gt; and brain-inspired learning&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;contact&#34;&gt;Contact&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;GitHub: &lt;a href=&#34;https://github.com/shashank23088&#34;&gt;https://github.com/shashank23088&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Email: &lt;a href=&#34;mailto:shashank.0901sharma@gmail.com&#34;&gt;shashank.0901sharma@gmail.com&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This website documents my projects, publications, research paper implementations, and some personal stuff.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Knowledge-Augmented LLMs for Intent-Based Summarization</title>
+      <link>http://localhost:1313/projects/knowledge_augmented_llms/</link>
+      <pubDate>Tue, 01 Apr 2025 00:00:00 +0530</pubDate>
+      <guid>http://localhost:1313/projects/knowledge_augmented_llms/</guid>
+      <description>Perspective-based summarization using classifier-guided and energy-based losses with PEFT tuning.</description>
+    </item>
+    <item>
+      <title>Deep Reinforcement Learning for Autonomous Navigation</title>
+      <link>http://localhost:1313/projects/deep_rl_navigation/</link>
+      <pubDate>Sun, 01 Dec 2024 00:00:00 +0530</pubDate>
+      <guid>http://localhost:1313/projects/deep_rl_navigation/</guid>
+      <description>Reinforcement learning agent for navigating knowledge graphs using LSTM policies and REINFORCE.</description>
+    </item>
+    <item>
+      <title>Accident Detection using Video Streaming</title>
+      <link>http://localhost:1313/projects/accident_detection/</link>
+      <pubDate>Sun, 01 Sep 2024 00:00:00 +0530</pubDate>
+      <guid>http://localhost:1313/projects/accident_detection/</guid>
+      <description>Real-time accident detection pipelines using YOLO, DeepSORT, and multimodal LLaVA-NeXT.</description>
+    </item>
+    <item>
+      <title>Advanced Smart City Monitoring: Real-Time Identification of Indian Citizen Attributes</title>
+      <link>http://localhost:1313/projects/smart_city_monitoring/</link>
+      <pubDate>Mon, 01 Jul 2024 00:00:00 +0530</pubDate>
+      <guid>http://localhost:1313/projects/smart_city_monitoring/</guid>
+      <description>Real-time person attribute recognition using pretrained transformers + YOLOv10 deployment.</description>
+    </item>
+    <item>
+      <title>Pulse of the Crowd: Quantifying Crowd Energy through Audio and Video Analysis</title>
+      <link>http://localhost:1313/projects/pulse_of_the_crowd/</link>
+      <pubDate>Sat, 01 Jun 2024 00:00:00 +0530</pubDate>
+      <guid>http://localhost:1313/projects/pulse_of_the_crowd/</guid>
+      <description>Multimodal crowd energy estimation using STEERER for density + CLAP audio embeddings for noise classification.</description>
     </item>
   </channel>
 </rss>

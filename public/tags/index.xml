@@ -6,6 +6,182 @@
     <description>Recent content in Tags on Shashank Sharma</description>
     <generator>Hugo -- 0.155.3</generator>
     <language>en-us</language>
+    <lastBuildDate>Fri, 13 Feb 2026 00:00:00 +0530</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Neuromorphic</title>
+      <link>http://localhost:1313/tags/neuromorphic/</link>
+      <pubDate>Fri, 13 Feb 2026 00:00:00 +0530</pubDate>
+      <guid>http://localhost:1313/tags/neuromorphic/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Pytorch</title>
+      <link>http://localhost:1313/tags/pytorch/</link>
+      <pubDate>Fri, 13 Feb 2026 00:00:00 +0530</pubDate>
+      <guid>http://localhost:1313/tags/pytorch/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Research</title>
+      <link>http://localhost:1313/tags/research/</link>
+      <pubDate>Fri, 13 Feb 2026 00:00:00 +0530</pubDate>
+      <guid>http://localhost:1313/tags/research/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Snntorch</title>
+      <link>http://localhost:1313/tags/snntorch/</link>
+      <pubDate>Fri, 13 Feb 2026 00:00:00 +0530</pubDate>
+      <guid>http://localhost:1313/tags/snntorch/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Spiking Neural Networks</title>
+      <link>http://localhost:1313/tags/spiking-neural-networks/</link>
+      <pubDate>Fri, 13 Feb 2026 00:00:00 +0530</pubDate>
+      <guid>http://localhost:1313/tags/spiking-neural-networks/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Healthcare AI</title>
+      <link>http://localhost:1313/tags/healthcare-ai/</link>
+      <pubDate>Tue, 01 Apr 2025 00:00:00 +0530</pubDate>
+      <guid>http://localhost:1313/tags/healthcare-ai/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>LLMs</title>
+      <link>http://localhost:1313/tags/llms/</link>
+      <pubDate>Tue, 01 Apr 2025 00:00:00 +0530</pubDate>
+      <guid>http://localhost:1313/tags/llms/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>NLP</title>
+      <link>http://localhost:1313/tags/nlp/</link>
+      <pubDate>Tue, 01 Apr 2025 00:00:00 +0530</pubDate>
+      <guid>http://localhost:1313/tags/nlp/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>PEFT</title>
+      <link>http://localhost:1313/tags/peft/</link>
+      <pubDate>Tue, 01 Apr 2025 00:00:00 +0530</pubDate>
+      <guid>http://localhost:1313/tags/peft/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Summarization</title>
+      <link>http://localhost:1313/tags/summarization/</link>
+      <pubDate>Tue, 01 Apr 2025 00:00:00 +0530</pubDate>
+      <guid>http://localhost:1313/tags/summarization/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Autonomous Navigation</title>
+      <link>http://localhost:1313/tags/autonomous-navigation/</link>
+      <pubDate>Sun, 01 Dec 2024 00:00:00 +0530</pubDate>
+      <guid>http://localhost:1313/tags/autonomous-navigation/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Knowledge Graphs</title>
+      <link>http://localhost:1313/tags/knowledge-graphs/</link>
+      <pubDate>Sun, 01 Dec 2024 00:00:00 +0530</pubDate>
+      <guid>http://localhost:1313/tags/knowledge-graphs/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>LSTM</title>
+      <link>http://localhost:1313/tags/lstm/</link>
+      <pubDate>Sun, 01 Dec 2024 00:00:00 +0530</pubDate>
+      <guid>http://localhost:1313/tags/lstm/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Reinforcement Learning</title>
+      <link>http://localhost:1313/tags/reinforcement-learning/</link>
+      <pubDate>Sun, 01 Dec 2024 00:00:00 +0530</pubDate>
+      <guid>http://localhost:1313/tags/reinforcement-learning/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Computer Vision</title>
+      <link>http://localhost:1313/tags/computer-vision/</link>
+      <pubDate>Sun, 01 Sep 2024 00:00:00 +0530</pubDate>
+      <guid>http://localhost:1313/tags/computer-vision/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>DeepSORT</title>
+      <link>http://localhost:1313/tags/deepsort/</link>
+      <pubDate>Sun, 01 Sep 2024 00:00:00 +0530</pubDate>
+      <guid>http://localhost:1313/tags/deepsort/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Multimodal AI</title>
+      <link>http://localhost:1313/tags/multimodal-ai/</link>
+      <pubDate>Sun, 01 Sep 2024 00:00:00 +0530</pubDate>
+      <guid>http://localhost:1313/tags/multimodal-ai/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Video Analytics</title>
+      <link>http://localhost:1313/tags/video-analytics/</link>
+      <pubDate>Sun, 01 Sep 2024 00:00:00 +0530</pubDate>
+      <guid>http://localhost:1313/tags/video-analytics/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>YOLO</title>
+      <link>http://localhost:1313/tags/yolo/</link>
+      <pubDate>Sun, 01 Sep 2024 00:00:00 +0530</pubDate>
+      <guid>http://localhost:1313/tags/yolo/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Person Attribute Recognition</title>
+      <link>http://localhost:1313/tags/person-attribute-recognition/</link>
+      <pubDate>Mon, 01 Jul 2024 00:00:00 +0530</pubDate>
+      <guid>http://localhost:1313/tags/person-attribute-recognition/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Smart City AI</title>
+      <link>http://localhost:1313/tags/smart-city-ai/</link>
+      <pubDate>Mon, 01 Jul 2024 00:00:00 +0530</pubDate>
+      <guid>http://localhost:1313/tags/smart-city-ai/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Transformers</title>
+      <link>http://localhost:1313/tags/transformers/</link>
+      <pubDate>Mon, 01 Jul 2024 00:00:00 +0530</pubDate>
+      <guid>http://localhost:1313/tags/transformers/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Audio-Video Analysis</title>
+      <link>http://localhost:1313/tags/audio-video-analysis/</link>
+      <pubDate>Sat, 01 Jun 2024 00:00:00 +0530</pubDate>
+      <guid>http://localhost:1313/tags/audio-video-analysis/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Crowd Monitoring</title>
+      <link>http://localhost:1313/tags/crowd-monitoring/</link>
+      <pubDate>Sat, 01 Jun 2024 00:00:00 +0530</pubDate>
+      <guid>http://localhost:1313/tags/crowd-monitoring/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Multimodal Learning</title>
+      <link>http://localhost:1313/tags/multimodal-learning/</link>
+      <pubDate>Sat, 01 Jun 2024 00:00:00 +0530</pubDate>
+      <guid>http://localhost:1313/tags/multimodal-learning/</guid>
+      <description></description>
+    </item>
   </channel>
 </rss>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>NLP on Shashank Sharma</title>
+    <link>http://localhost:1313/tags/nlp/</link>
+    <description>Recent content in NLP on Shashank Sharma</description>
+    <generator>Hugo -- 0.155.3</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 01 Apr 2025 00:00:00 +0530</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/nlp/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Knowledge-Augmented LLMs for Intent-Based Summarization</title>
+      <link>http://localhost:1313/projects/knowledge_augmented_llms/</link>
+      <pubDate>Tue, 01 Apr 2025 00:00:00 +0530</pubDate>
+      <guid>http://localhost:1313/projects/knowledge_augmented_llms/</guid>
+      <description>Perspective-based summarization using classifier-guided and energy-based losses with PEFT tuning.</description>
+    </item>
+  </channel>
+</rss>

@@ -2,6 +2,10 @@ baseURL = "https://shashankgsharma.github.io/"
 languageCode = "en-us"
 title = "Shashank Sharma"
 theme = "PaperMod"
+timeZone = "Asia/Kolkata"
+
+# [pagination]
+#  pagerSize = 10
 
 [params]
   author = "Shashank Sharma"
@@ -18,11 +22,11 @@ theme = "PaperMod"
   ShowBreadCrumbs = true
   ShowCodeCopyButtons = true
 
-  # ❌ Remove ugly social share bar (X, Reddit, FB etc.)
+  # Remove ugly social share bar (X, Reddit, FB etc.)
   ShowShareButtons = false
 
-  # ❌ Remove "Powered by Hugo & PaperMod" footer branding
-  hidePoweredBy = true
+  # Remove "Powered by Hugo & PaperMod" footer branding
+  hideFooter = true
 
   # Social Icons (keep only professional ones)
   [[params.socialIcons]]
@@ -51,8 +55,12 @@ theme = "PaperMod"
 
   title = "Shashank Sharma"
 
-  # ✅ Cleaner academic subtitle (not keyword spam)
-  subtitle = "Incoming AI/ML Researcher @ TCS Research • NLP & Summarization • Neuromorphic Computing"
+  # Cleaner academic subtitle (not keyword spam)
+  subtitle = "Researcher @ TCS Research • NLP & GenAI • Neuromorphic Computing"
+
+  [[params.profileMode.buttons]]
+    name = "About"
+    url = "/about/"
 
   [[params.profileMode.buttons]]
     name = "CV"
@@ -65,24 +73,6 @@ theme = "PaperMod"
   [[params.profileMode.buttons]]
     name = "Blog"
     url = "/posts/"
-
-
-# -------------------------------
-# Homepage Text Below Profile
-# -------------------------------
-[params.homeInfoParams]
-  Title = "Research Notes & Projects"
-  Content = """
-Incoming **AI/ML Researcher at TCS Research**.
-
-### Research Interests
-- Perspective-aware summarization in healthcare NLP  
-- Efficient adaptation of large language models (Adapters, LoRA)  
-- Controlled generation and classifier-guided training  
-- Neuromorphic computing and brain-inspired learning  
-
-I write about **research paper implementations**, experiments, and career learnings below.
-"""
 
 
 # -------------------------------
