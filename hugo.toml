@@ -5,13 +5,26 @@ theme = "PaperMod"
 
 [params]
   author = "Shashank Sharma"
-  defaultTheme = "light"
+
+  # Homepage should show recent blog posts
+  mainSections = ["posts"]
+
+  # Theme
+  defaultTheme = "dark"
+
+  # Reading + Navigation
   ShowReadingTime = true
-  ShowShareButtons = true
   ShowPostNavLinks = true
   ShowBreadCrumbs = true
   ShowCodeCopyButtons = true
 
+  # ❌ Remove ugly social share bar (X, Reddit, FB etc.)
+  ShowShareButtons = false
+
+  # ❌ Remove "Powered by Hugo & PaperMod" footer branding
+  hidePoweredBy = true
+
+  # Social Icons (keep only professional ones)
   [[params.socialIcons]]
     name = "github"
     url = "https://github.com/shashankgsharma"
@@ -25,13 +38,24 @@ theme = "PaperMod"
     url = "mailto:shashank.0901sharma@gmail.com"
 
 
+# -------------------------------
+# Academic Researcher Homepage
+# -------------------------------
 [params.profileMode]
   enabled = true
+
+  imageUrl = "/profile.jpg"
+  imageTitle = "Shashank Sharma"
+  imageWidth = 160
+  imageHeight = 160
+
   title = "Shashank Sharma"
-  subtitle = "AI Research | Neuromorphic Computing | RnD @ TCS Research | ML | DL | NLP | GenAI | CV | RL"
+
+  # ✅ Cleaner academic subtitle (not keyword spam)
+  subtitle = "Incoming AI/ML Researcher @ TCS Research • NLP & Summarization • Neuromorphic Computing"
 
   [[params.profileMode.buttons]]
-    name = "Resume"
+    name = "CV"
     url = "/files/resume.pdf"
 
   [[params.profileMode.buttons]]
@@ -39,10 +63,36 @@ theme = "PaperMod"
     url = "/projects/"
 
   [[params.profileMode.buttons]]
-    name = "Publications"
-    url = "/publications/"
-
-  [[params.profileMode.buttons]]
     name = "Blog"
     url = "/posts/"
+
+
+# -------------------------------
+# Homepage Text Below Profile
+# -------------------------------
+[params.homeInfoParams]
+  Title = "Research Notes & Projects"
+  Content = """
+Incoming **AI/ML Researcher at TCS Research**.
+
+### Research Interests
+- Perspective-aware summarization in healthcare NLP  
+- Efficient adaptation of large language models (Adapters, LoRA)  
+- Controlled generation and classifier-guided training  
+- Neuromorphic computing and brain-inspired learning  
+
+I write about **research paper implementations**, experiments, and career learnings below.
+"""
+
+
+# -------------------------------
+# Favicon Setup
+# -------------------------------
+[params.assets]
+  favicon = "/favicon/favicon.ico"
+  favicon16x16 = "/favicon/favicon-16x16.png"
+  favicon32x32 = "/favicon/favicon-32x32.png"
+  apple_touch_icon = "/favicon/apple-touch-icon.png"
+  android_chrome192x192 = "/favicon/android-chrome-192x192.png"
+  android_chrome512x512 = "/favicon/android-chrome-512x512.png"
 

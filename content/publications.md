@@ -1,6 +1,6 @@
 +++
 date = '2026-02-13T00:03:46+05:30'
-draft = true
+draft = false
 title = 'Publications'
 layout = 'page'
 +++
