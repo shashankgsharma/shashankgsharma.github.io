@@ -890,14 +890,14 @@ a.tag:hover { color: var(--accent); border-color: var(--accent); }
 .jnode--current .jnode__soma { fill: var(--accent); stroke: var(--accent); }
 .jnode__label {
   font-family: var(--font-sans);
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 500;
   fill: var(--ink);
   transition: fill .25s var(--ease);
 }
 .jnode__sub {
   font-family: var(--font-mono);
-  font-size: 11px;
+  font-size: 12px;
   fill: var(--ink-3);
   letter-spacing: .04em;
 }
@@ -958,7 +958,7 @@ html:not(.has-js) .journey__panel { display: none; }
 .jnode:focus { outline: none; }
 .jnode:focus-visible .jnode__halo { opacity: .18; }
 
-@media (max-width: 760px) {
+@media (max-width: 1000px) {
   .journey__graph { display: none; }
   .has-js .journey__list { display: block; }
   .journey__panel { display: none !important; }
@@ -985,7 +985,7 @@ html:not(.has-js) .journey__panel { display: none; }
    Bookshelf
    ========================================================================== */
 .shelf { --shelf-h: 232px; }
-@media (min-width: 761px) {
+@media (min-width: 901px) {
   .shelf {
     display: grid;
     grid-template-columns: auto minmax(0, 1fr);
@@ -1061,7 +1061,6 @@ html:not(.has-js) .journey__panel { display: none; }
 
 .shelf__board {
   height: 5px;
-  margin: 0 -7px;
   background: var(--ink-3);
   opacity: .45;
   border-radius: 0 0 3px 3px;
@@ -1079,10 +1078,17 @@ html:not(.has-js) .journey__panel { display: none; }
 .shelf__meta { font-family: var(--font-mono); font-size: .75rem; color: var(--ink-3); margin: .25rem 0 .5rem; }
 .shelf__note { font-size: .9375rem; color: var(--ink-2); max-width: 44ch; line-height: 1.6; }
 
-@media (max-width: 760px) {
-  .shelf { --shelf-h: 190px; }
+/* Stacked: the shelf must shrink to the books, or the board floats out
+   across the whole column with nothing standing on it. */
+@media (max-width: 900px) {
+  .shelf__unit { width: max-content; max-width: 100%; }
+  .shelf__caption { padding-top: 1rem; min-height: 0; }
+}
+@media (max-width: 620px) {
+  .shelf { --shelf-h: 220px; }
+  .shelf__unit { width: 100%; }
   .shelf__row { gap: 4px; overflow-x: auto; padding-bottom: 2px; }
-  .shelf__caption { padding-top: 1rem; }
+  .spine { width: 3.2rem; padding-block: 1.1rem; }
 }
 
 /* ==========================================================================
@@ -1118,7 +1124,7 @@ html:not(.has-js) .journey__panel { display: none; }
 }
 .entry__contrib span {
   font-family: var(--font-mono);
-  font-size: .625rem;
+  font-size: .6875rem;
   letter-spacing: .14em;
   text-transform: uppercase;
   color: var(--accent);
@@ -1205,3 +1211,40 @@ html:not(.has-js) .journey__panel { display: none; }
 }
 .profile-row a:hover { color: var(--accent); background-size: 100% 1px; }
 .profile-row svg { width: .95rem; height: .95rem; flex: none; }
+
+/* ==========================================================================
+   Touch targets
+   Discrete controls (not inline prose links) need a comfortable hit area.
+   The brand and the footer icons were small even for a mouse, so those are
+   fixed everywhere; the rest only grow on touch devices, where the pointer
+   is a fingertip and the extra padding costs nothing.
+   ========================================================================== */
+.brand { padding-block: .5rem; }
+
+.site-footer__social { gap: .35rem; }
+.site-footer__social a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  margin-block: -.5rem;
+  border-radius: 8px;
+  transition: color .2s var(--ease), background-color .2s var(--ease);
+}
+.site-footer__social a:hover { background: var(--surface-2); }
+
+@media (hover: none) {
+  .section-more { padding-block: .55rem; }
+  .entry__links { gap: .5rem 1.1rem; }
+  .entry__links a,
+  .entry__links .linkbtn { padding-block: .45rem; }
+  .profile-row { gap: .35rem 1.4rem; }
+  .profile-row a { padding-block: .5rem; }
+  .pub-profiles { gap: .35rem 1.4rem; }
+  .pub-profiles a { padding-block: .5rem; }
+  .site-footer__inner > div:not(.site-footer__social) a { padding-block: .5rem; display: inline-block; }
+  .post-nav a { padding-block: .4rem; }
+  .tag { padding-block: .35rem; }
+  .fact__value a { display: inline-block; padding-block: .45rem; }
+}
