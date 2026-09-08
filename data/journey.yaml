@@ -9,8 +9,6 @@ edges:
   - d: "M 434 70 C 505 70, 545 155, 604 155"
   - d: "M 434 240 C 505 240, 545 155, 604 155"
   - d: "M 646 155 L 779 155"
-  - d: "M 821 155 L 924 155"
-    open: true
 
 nodes:
   - id: roots
@@ -104,18 +102,3 @@ nodes:
       threshold adaptation changes what a network can hold over time, and whether that
       is something I can bring back into the porting project rather than leave as a
       side experiment.
-
-  - id: next
-    x: 945
-    y: 155
-    label: "PhD"
-    sub: "2027"
-    anchor: below
-    open: true
-    title: "Doctoral work, from 2027"
-    org: "Europe"
-    period: "Fall 2027 onward"
-    body: >-
-      Applying for the Fall 2027 cycle, to groups in Europe working on neuromorphic
-      computing, efficient deep learning, or the point where those meet language and
-      perception. This node is deliberately unfilled.

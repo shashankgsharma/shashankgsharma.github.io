@@ -42,7 +42,7 @@ disableKinds = ["taxonomy", "term"]
 
   tagline = "I build spiking neural networks, and the tooling that moves them between neuromorphic frameworks without quietly changing what they compute. At the moment I am trying to find where spiking models fail at language, and whether adaptive neurons are any help."
 
-  ctaText = "I am applying to doctoral programmes in Europe for the Fall 2027 cycle. If your group works on neuromorphic hardware and algorithms, efficient deep learning, or spiking models for language and perception, I would be glad to send a longer version of any of this."
+  ctaText = "If you work on neuromorphic hardware and algorithms, efficient deep learning, or spiking models for language and perception, write to me. I am glad to send a longer version of any of this. Corrections are welcome too; a fair amount of what is on this site is still provisional."
 
   researchKeywords = ["Neuromorphic computing", "Spiking neural networks", "Event-based data", "Adaptive LIF neurons", "Multimodal machine learning"]
 
