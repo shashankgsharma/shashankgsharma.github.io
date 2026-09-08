@@ -1,0 +1,16 @@
+<footer class="site-footer">
+  <div class="wrap site-footer__inner">
+    <div>
+      © {{ now.Year }} {{ site.Params.author }}
+      <span style="opacity:.5"> · </span>
+      <a href="{{ site.Params.cv | relURL }}" target="_blank" rel="noopener">Curriculum Vitae</a>
+    </div>
+    <div class="site-footer__social">
+      <a href="mailto:{{ site.Params.email }}" aria-label="Email">{{ partial "icon.html" "mail" }}</a>
+      <a href="{{ site.Params.scholar }}" target="_blank" rel="noopener" aria-label="Google Scholar">{{ partial "icon.html" "scholar" }}</a>
+      <a href="{{ site.Params.orcid }}" target="_blank" rel="noopener" aria-label="ORCID">{{ partial "icon.html" "orcid" }}</a>
+      <a href="{{ site.Params.github }}" target="_blank" rel="noopener" aria-label="GitHub">{{ partial "icon.html" "github" }}</a>
+      <a href="{{ site.Params.linkedin }}" target="_blank" rel="noopener" aria-label="LinkedIn">{{ partial "icon.html" "linkedin" }}</a>
+    </div>
+  </div>
+</footer>

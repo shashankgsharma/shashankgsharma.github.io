@@ -1,0 +1,62 @@
+# Author lists are exact, taken from Crossref (DOI 10.1109/MIPR62202.2024.00056)
+# and the arXiv API. Do not shorten them to "et al." — position matters to readers.
+- title: "Pulse of the Crowd: Quantifying Crowd Energy through Audio and Video Analysis"
+  authors:
+    - "Avinash Anand"
+    - "Sarthak Jain"
+    - "Shashank Sharma"
+    - "Akhil P. Dominic"
+    - "Aman Gupta"
+    - "Ashta Verma"
+    - "Raj Jaiswal"
+    - "Naman Lal"
+    - "Rajiv Ratn Shah"
+    - "Roger Zimmermann"
+  venue: "IEEE 7th International Conference on Multimedia Information Processing and Retrieval (MIPR), pp. 308–314"
+  year: 2024
+  type: "Conference paper"
+  doi: "10.1109/MIPR62202.2024.00056"
+  contribution: "I built the audio half: the CLAP-based classifier for crowd noise, and the 90-minute labelled dataset it trains on."
+  links:
+    - name: "IEEE Xplore"
+      url: "https://ieeexplore.ieee.org/document/10707791"
+      icon: "link"
+  page: "/projects/pulse-of-the-crowd/"
+  bibtex: |
+    @inproceedings{anand2024pulse,
+      title     = {Pulse of the Crowd: Quantifying Crowd Energy through Audio and Video Analysis},
+      author    = {Anand, Avinash and Jain, Sarthak and Sharma, Shashank and Dominic, Akhil P.
+                   and Gupta, Aman and Verma, Ashta and Jaiswal, Raj and Lal, Naman
+                   and Shah, Rajiv Ratn and Zimmermann, Roger},
+      booktitle = {2024 IEEE 7th International Conference on Multimedia Information
+                   Processing and Retrieval (MIPR)},
+      pages     = {308--314},
+      year      = {2024},
+      publisher = {IEEE},
+      doi       = {10.1109/MIPR62202.2024.00056}
+    }
+
+- title: "Advanced Smart City Monitoring: Real-Time Identification of Indian Citizen Attributes"
+  authors:
+    - "Shubham Kale"
+    - "Shashank Sharma"
+    - "Abhilash Khuntia"
+  venue: "arXiv:2407.03305"
+  year: 2024
+  type: "Preprint"
+  contribution: "I worked on the attribute recognition model and the cascade that made it fast enough to run on a live feed."
+  links:
+    - name: "arXiv"
+      url: "https://arxiv.org/abs/2407.03305"
+      icon: "link"
+  page: "/projects/smart-city-monitoring/"
+  bibtex: |
+    @misc{kale2024advanced,
+      title         = {Advanced Smart City Monitoring: Real-Time Identification
+                       of Indian Citizen Attributes},
+      author        = {Kale, Shubham and Sharma, Shashank and Khuntia, Abhilash},
+      year          = {2024},
+      eprint        = {2407.03305},
+      archivePrefix = {arXiv},
+      primaryClass  = {cs.CV}
+    }

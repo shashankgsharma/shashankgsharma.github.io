@@ -11,8 +11,6 @@ Unlike standard neural networks, SNNs communicate using **discrete spikes over t
 
 In this tutorial, we will cover the basics of **SNNTorch**, one of the most popular PyTorch-based libraries for building SNNs.
 
----
-
 ## Why SNNTorch?
 
 SNNTorch is useful because:
@@ -22,8 +20,6 @@ SNNTorch is useful because:
 - It provides ready-to-use spiking neuron models
 - It is beginner-friendly for deep learning researchers
 
----
-
 ## Installation
 
 Install SNNTorch using pip:
@@ -31,8 +27,6 @@ Install SNNTorch using pip:
 ```bash
 pip install snntorch
 ```
-
----
 
 ## Core Idea: Neurons Spike Over Time
 
@@ -46,8 +40,6 @@ In an SNN:
 - When threshold is reached → neuron fires a spike  
 - The process repeats over **timesteps**
 
----
-
 ## Importing SNNTorch
 
 A typical setup looks like:
@@ -58,8 +50,6 @@ import torch.nn as nn
 import snntorch as snn
 from snntorch import surrogate
 ```
-
----
 
 ## The Leaky Integrate-and-Fire (LIF) Neuron
 
@@ -78,8 +68,6 @@ beta = 0.9  # decay factor
 
 lif_neuron = snn.Leaky(beta=beta)
 ```
-
----
 
 ## Building a Simple Spiking Network
 
@@ -118,8 +106,6 @@ class SimpleSNN(nn.Module):
         return torch.stack(spk2_rec)
 ```
 
----
-
 ## Key Points
 
 Notice:
@@ -127,8 +113,6 @@ Notice:
 - We simulate over **timesteps**
 - Neurons output spikes (`spk`)
 - Membrane state (`mem`) is carried forward
-
----
 
 ## Loss Function for SNNs
 
@@ -143,8 +127,6 @@ lif = snn.Leaky(beta=0.9, spike_grad=spike_grad)
 ```
 
 This allows gradient-based learning.
-
----
 
 ## Training an SNN (High-Level)
 
@@ -164,8 +146,6 @@ for data, targets in dataloader:
     optimizer.step()
 ```
 
----
-
 ## Where SNNTorch is Used
 
 SNNTorch is widely used for:
@@ -175,8 +155,6 @@ SNNTorch is widely used for:
 - low-power AI research  
 - brain-inspired architectures  
 
----
-
 ## Conclusion
 
 SNNTorch provides a clean bridge between:
@@ -185,8 +163,6 @@ SNNTorch provides a clean bridge between:
 - neuromorphic computing (spikes + time)
 
 If you already know PyTorch, it is one of the best frameworks to start exploring Spiking Neural Networks.
-
----
 
 ## Next Steps
 

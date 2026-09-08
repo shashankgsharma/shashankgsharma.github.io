@@ -1,0 +1,19 @@
+{{ define "main" }}
+<article class="wrap wrap--narrow" data-band="3">
+  <header class="article-head">
+    <p class="eyebrow reveal">Writing</p>
+    <h1 class="reveal" data-delay="60">{{ .Title }}</h1>
+    <div class="article-meta reveal" data-delay="120">
+      <span>{{ .Date.Format "02 January 2006" }}</span>
+      <span>{{ .ReadingTime }} min read</span>
+      {{- with .Params.tags }}<span>{{ delimit . " · " }}</span>{{ end }}
+    </div>
+  </header>
+  <div class="prose reveal">{{ .Content }}</div>
+
+  <nav class="post-nav">
+    {{- with .PrevInSection }}<a href="{{ .RelPermalink }}"><span>Newer</span>{{ .Title }}</a>{{ end }}
+    {{- with .NextInSection }}<a class="next" href="{{ .RelPermalink }}"><span>Older</span>{{ .Title }}</a>{{ end }}
+  </nav>
+</article>
+{{ end }}

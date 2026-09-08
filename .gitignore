@@ -1,0 +1,8 @@
+# Hugo build output — the site is built and deployed by GitHub Actions
+/public/
+/resources/
+.hugo_build.lock
+
+# OS / editor noise
+.DS_Store
+*.swp

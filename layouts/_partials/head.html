@@ -1,0 +1,75 @@
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  {{- $title := cond .IsHome site.Title (printf "%s · %s" .Title site.Title) }}
+  {{- $desc := "" }}
+  {{- with .Description }}{{ $desc = . }}{{ else }}{{ $desc = (or .Summary site.Params.description) }}{{ end }}
+  {{- $desc = $desc | plainify | truncate 180 }}
+  <title>{{ $title }}</title>
+  <meta name="description" content="{{ $desc }}">
+  <meta name="author" content="{{ site.Params.author }}">
+  <link rel="canonical" href="{{ .Permalink }}">
+
+  <!-- Open Graph -->
+  <meta property="og:site_name" content="{{ site.Title }}">
+  <meta property="og:title" content="{{ cond .IsHome (printf "%s — %s" site.Title site.Params.role) .Title }}">
+  <meta property="og:description" content="{{ $desc }}">
+  <meta property="og:type" content="{{ cond .IsPage "article" "website" }}">
+  <meta property="og:url" content="{{ .Permalink }}">
+  <meta property="og:image" content="{{ "profile.jpg" | absURL }}">
+  <meta name="twitter:card" content="summary">
+
+  <!-- Theme colour follows the resolved palette -->
+  <meta name="theme-color" content="#0E0D14">
+
+  {{- /* Fingerprinted so a changed icon gets a changed URL — browsers cache
+         favicons hard, and a stale one is invisible rather than merely old. */}}
+  {{- $ico := resources.Get "favicon/favicon.ico" | fingerprint }}
+  {{- $svg := resources.Get "favicon/favicon.svg" | fingerprint }}
+  {{- $ati := resources.Get "favicon/apple-touch-icon.png" | fingerprint }}
+  <link rel="icon" href="{{ $ico.RelPermalink }}" sizes="32x32">
+  <link rel="icon" type="image/svg+xml" href="{{ $svg.RelPermalink }}">
+  <link rel="apple-touch-icon" href="{{ $ati.RelPermalink }}">
+  <link rel="manifest" href="{{ "favicon/site.webmanifest" | relURL }}">
+
+  <!-- Resolve the theme before first paint: no flash, no flicker.
+       Dark is the default; only an explicit choice overrides it. -->
+  <script>
+    (function () {
+      var t;
+      try { t = localStorage.getItem("theme"); } catch (e) {}
+      document.documentElement.setAttribute("data-theme", t === "light" ? "light" : "dark");
+      document.documentElement.classList.remove("no-js");
+      document.documentElement.classList.add("has-js");
+    })();
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,300..700;1,6..72,300..600&display=swap">
+
+  {{- $css := resources.Get "css/main.css" | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
+
+  {{- with .OutputFormats.Get "rss" }}
+  <link rel="alternate" type="application/rss+xml" href="{{ .Permalink }}" title="{{ site.Title }}">
+  {{- end }}
+
+  {{- if .IsHome }}
+  <script type="application/ld+json">
+  {{ dict
+      "@context" "https://schema.org"
+      "@type" "Person"
+      "name" site.Params.author
+      "url" site.BaseURL
+      "email" site.Params.email
+      "image" (absURL "profile.jpg")
+      "jobTitle" site.Params.role
+      "affiliation" (dict "@type" "Organization" "name" site.Params.affiliation)
+      "sameAs" (slice site.Params.orcid site.Params.scholar site.Params.github site.Params.githubAlt site.Params.linkedin)
+      "knowsAbout" site.Params.researchKeywords
+    | jsonify (dict "indent" "  ") | safeJS }}
+  </script>
+  {{- end }}
+</head>

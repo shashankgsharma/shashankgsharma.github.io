@@ -1,0 +1,121 @@
+# The trajectory graph on the home page. Coordinates live in a 1000×300 viewBox.
+# Lanes: perception y=70, spine y=155, language y=240.
+caption: "It started with vision, picked up language along the way, and both ended up asking the same question about where computation should be spent."
+
+edges:
+  - d: "M 76 155 L 194 155"
+  - d: "M 236 155 C 300 155, 330 70, 396 70"
+  - d: "M 236 155 C 300 155, 330 240, 396 240"
+  - d: "M 434 70 C 505 70, 545 155, 604 155"
+  - d: "M 434 240 C 505 240, 545 155, 604 155"
+  - d: "M 646 155 L 779 155"
+  - d: "M 821 155 L 924 155"
+    open: true
+
+nodes:
+  - id: roots
+    x: 55
+    y: 155
+    label: "Foundations"
+    sub: "2019–23"
+    anchor: below
+    title: "Information & Communication Technology"
+    org: "Adani Institute of Infrastructure Engineering, Ahmedabad"
+    period: "2019 – 2023"
+    body: >-
+      Four years of signals, networks and circuits before any of it was called machine
+      learning. Graduated at 9.22, cleared GATE at 93.90 percentile, and left with the
+      habit of asking what a system costs before asking what it can do.
+
+  - id: iiitd
+    x: 215
+    y: 155
+    label: "M.Tech · AI"
+    sub: "2023–25"
+    anchor: below
+    title: "M.Tech, Computer Science (AI specialisation)"
+    org: "IIIT Delhi"
+    period: "2023 – 2025"
+    body: >-
+      Two years of coursework and research in AI, alongside teaching assistantships for
+      NLP, DSA, AI and Intelligent Systems. The lab work split into two directions that
+      only converged much later.
+
+  - id: perception
+    x: 415
+    y: 70
+    label: "Multimodal"
+    sub: "2024"
+    anchor: above
+    title: "Multimodal perception at MIDAS Lab"
+    org: "MIDAS Lab, IIIT Delhi · with Dr. Rajiv Ratn Shah"
+    period: "Dec 2023 – Sept 2024"
+    body: >-
+      Crowd energy from audio and video, published at IEEE MIPR. Person attribute
+      recognition for Indian street scenes, put on arXiv. Accident detection from live
+      video with TU Darmstadt. All three had the same shape: a model that works offline,
+      and a stream that will not wait for it.
+
+  - id: language
+    x: 415
+    y: 240
+    label: "Language"
+    sub: "2025"
+    anchor: below
+    title: "Controllable summarisation"
+    org: "IIIT Delhi · with Dr. Shad Akhtar"
+    period: "Jan – Apr 2025"
+    body: >-
+      Perspective-controlled summarisation of healthcare threads, using classifier
+      guidance and an energy term over adapters and prefix tuning. The interesting part
+      was not the score. It was watching how little of a large model you actually need
+      to move if you are precise about which part you move.
+
+  - id: tcs
+    x: 625
+    y: 155
+    label: "Neuromorphic"
+    sub: "2025–"
+    anchor: below
+    current: true
+    title: "Neuromorphic computing at TCS Research"
+    org: "TCS Research, Kolkata · with Dr. Barnali Basak and Sounak Dey"
+    period: "Sept 2025 – present"
+    body: >-
+      The main project is a bridge between general neuromorphic frameworks and
+      hardware-specific ones: one spiking model, ported across SNNTorch, Rockpool, Lava
+      and Sinabs, holding 96% accuracy within 2% of the reference. Building it meant
+      first building real intuition for how SNNs behave — how event-based data should be
+      handled, and where sparsity actually buys you something in multimodal tasks
+      rather than just looking elegant on a slide.
+
+  - id: now
+    x: 800
+    y: 155
+    label: "Spiking LMs"
+    sub: "now"
+    anchor: below
+    title: "Language modelling with spikes"
+    org: "Current exploration"
+    period: "Now"
+    body: >-
+      Language is the hard case for spiking networks, so that is where I am looking for
+      the cracks. Alongside it I am working through adaptive-LIF neurons — how their
+      threshold adaptation changes what a network can hold over time, and whether that
+      is something I can bring back into the porting project rather than leave as a
+      side experiment.
+
+  - id: next
+    x: 945
+    y: 155
+    label: "PhD"
+    sub: "2027"
+    anchor: below
+    open: true
+    title: "Doctoral work, from 2027"
+    org: "Europe"
+    period: "Fall 2027 onward"
+    body: >-
+      Applying for the Fall 2027 cycle, to groups in Europe working on neuromorphic
+      computing, efficient deep learning, or the point where those meet language and
+      perception. This node is deliberately unfilled.

@@ -1,0 +1,19 @@
+{{- $p := . }}
+<article class="entry reveal">
+  <div class="entry__meta">
+    {{ with $p.Params.timeline }}{{ . }}{{ else }}{{ $p.Date.Format "Jan 2006" }}{{ end }}
+  </div>
+  <div>
+    <h3 class="entry__title"><a href="{{ $p.RelPermalink }}">{{ $p.Title }}</a></h3>
+    {{- with $p.Params.venue }}<p class="entry__venue">{{ . }}</p>{{ end }}
+    <p class="entry__desc">{{ $p.Params.summary | default $p.Summary }}</p>
+    <div class="entry__links">
+      {{- with $p.Params.github }}<a href="{{ . }}" target="_blank" rel="noopener">{{ partial "icon.html" "github" }}Code</a>{{ end }}
+      {{- with $p.Params.paper }}<a href="{{ . }}" target="_blank" rel="noopener">{{ partial "icon.html" "link" }}Paper</a>{{ end }}
+      <a href="{{ $p.RelPermalink }}">{{ partial "icon.html" "arrow" }}Read more</a>
+    </div>
+    {{- with $p.Params.tags }}
+    <div class="tags">{{ range first 4 . }}<span class="tag">{{ . }}</span>{{ end }}</div>
+    {{- end }}
+  </div>
+</article>

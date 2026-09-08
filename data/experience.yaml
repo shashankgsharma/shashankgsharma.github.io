@@ -1,0 +1,24 @@
+- role: "Research & Innovation Engineer"
+  org: "TCS Research, Kolkata"
+  period: "Sept 2025 — Present"
+  current: true
+  advisors: "Dr. Barnali Basak, Sounak Dey"
+  points:
+    - "Main project: a bridge between general neuromorphic frameworks and hardware-specific ones. A single spiking model, ported across SNNTorch, Rockpool, Lava and Sinabs, holds 96% accuracy on time-series classification, within 2% of the reference implementation."
+    - "Built working intuition for SNN dynamics along the way: how event-based data should be represented, and which multimodal tasks sparsity actually makes cheaper."
+    - "Currently probing language modelling with spiking networks to find where it fails, and studying adaptive-LIF neurons with a view to using their threshold adaptation inside the main project."
+
+- role: "Post Graduate Researcher"
+  org: "MIDAS Lab, IIIT Delhi"
+  period: "Dec 2023 — Sept 2024"
+  advisors: "Dr. Rajiv Ratn Shah"
+  points:
+    - "Ran three multimodal projects: crowd energy estimation (published at IEEE MIPR 2024), person attribute recognition for Indian street scenes, and accident detection from video streams."
+    - "The accident detection work was joint with TU Darmstadt, where the throughput of the pipeline mattered as much as its accuracy."
+
+- role: "Teaching Assistant"
+  org: "IIIT Delhi"
+  period: "2023 — 2025"
+  points:
+    - "Natural Language Processing, Data Structures & Algorithms, Artificial Intelligence, Intelligent Systems."
+    - "Ran labs and office hours, set and marked assignments and exams."

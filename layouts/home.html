@@ -1,0 +1,107 @@
+{{ define "main" }}
+
+<section class="hero" data-band="1">
+  <div class="wrap hero__inner">
+    <div>
+      <p class="eyebrow reveal">{{ site.Params.eyebrow }}</p>
+      <h1 class="display hero__name reveal" data-delay="60">Shashank <em>Sharma</em></h1>
+      <p class="hero__role reveal" data-delay="120">
+        <strong>{{ site.Params.role }}</strong> at {{ site.Params.affiliation }}
+      </p>
+      <p class="lede hero__bio reveal" data-delay="180">{{ site.Params.tagline }}</p>
+      <div class="link-row reveal" data-delay="240">
+        <a class="btn btn--primary" href="{{ site.Params.cv | relURL }}" target="_blank" rel="noopener">
+          {{ partial "icon.html" "file" }}Curriculum Vitae
+        </a>
+        <a class="btn btn--ghost" href="mailto:{{ site.Params.email }}">{{ partial "icon.html" "mail" }}Email</a>
+      </div>
+      <div class="profile-row reveal" data-delay="300">
+        <a href="{{ site.Params.scholar }}" target="_blank" rel="noopener">{{ partial "icon.html" "scholar" }}Google Scholar</a>
+        <a href="{{ site.Params.orcid }}" target="_blank" rel="noopener">{{ partial "icon.html" "orcid" }}ORCID</a>
+        <a href="{{ site.Params.github }}" target="_blank" rel="noopener">{{ partial "icon.html" "github" }}GitHub</a>
+        <a href="{{ site.Params.linkedin }}" target="_blank" rel="noopener">{{ partial "icon.html" "linkedin" }}LinkedIn</a>
+      </div>
+    </div>
+    <div class="hero__portrait reveal" data-delay="120">
+      <img src="{{ "profile.jpg" | relURL }}" alt="Portrait of Shashank Sharma" width="500" height="500">
+    </div>
+  </div>
+</section>
+
+<section class="wrap" data-band="2" style="padding-bottom: clamp(1rem,4vw,2rem)">
+  <div class="reveal">{{ partial "journey.html" . }}</div>
+</section>
+
+<section class="section wrap" data-band="3">
+  <div class="section-head reveal">
+    <h2>What I&rsquo;m working on</h2>
+    <a class="section-more" href="{{ "/research/" | relURL }}">Research</a>
+  </div>
+  <div class="grid grid--2 reveal">
+    {{- range $i, $it := site.Data.interests }}
+    <div class="cell">
+      <span class="cell__num">{{ printf "%02d" (add $i 1) }}</span>
+      <h3>{{ $it.title }}</h3>
+      <p>{{ $it.body }}</p>
+    </div>
+    {{- end }}
+  </div>
+</section>
+
+<section class="section wrap" data-band="4">
+  <div class="section-head reveal">
+    <h2>Publications</h2>
+    <a class="section-more" href="{{ "/research/" | relURL }}">Research</a>
+  </div>
+  {{ partial "pub-profiles.html" . }}
+  <div class="entries">
+    {{- range site.Data.publications }}{{ partial "pub-entry.html" . }}{{ end }}
+  </div>
+</section>
+
+<section class="section wrap" data-band="5">
+  <div class="section-head reveal">
+    <h2>Selected projects</h2>
+    <a class="section-more" href="{{ "/projects/" | relURL }}">All projects</a>
+  </div>
+  <div class="entries">
+    {{- $projects := where site.RegularPages "Section" "projects" }}
+    {{- range first 3 (sort $projects "Date" "desc") }}{{ partial "project-entry.html" . }}{{ end }}
+  </div>
+</section>
+
+{{- $posts := where site.RegularPages "Section" "posts" }}
+{{- if $posts }}
+<section class="section wrap" data-band="6">
+  <div class="section-head reveal">
+    <h2>Writing</h2>
+    <a class="section-more" href="{{ "/posts/" | relURL }}">All notes</a>
+  </div>
+  <div class="entries">
+    {{- range first 3 (sort $posts "Date" "desc") }}
+    <article class="entry reveal">
+      <div class="entry__meta">{{ .Date.Format "Jan 2006" }}<br>{{ .ReadingTime }} min</div>
+      <div>
+        <h3 class="entry__title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+        <p class="entry__desc">{{ .Params.summary | default .Summary }}</p>
+      </div>
+    </article>
+    {{- end }}
+  </div>
+</section>
+{{- end }}
+
+<div class="wrap" data-band="6">{{ partial "spike-rule.html" . }}</div>
+
+<section class="wrap" data-band="6" style="padding-bottom: clamp(2rem,6vw,4rem)">
+  <div class="cta reveal">
+    <h2>Applying for a PhD, Fall 2027</h2>
+    <p>{{ site.Params.ctaText }}</p>
+    <div class="link-row">
+      <a class="btn btn--primary" href="mailto:{{ site.Params.email }}">{{ partial "icon.html" "mail" }}{{ site.Params.email }}</a>
+      <a class="btn btn--ghost" href="{{ site.Params.cv | relURL }}" target="_blank" rel="noopener">{{ partial "icon.html" "file" }}Download CV</a>
+    </div>
+  </div>
+</section>
+
+{{ end }}

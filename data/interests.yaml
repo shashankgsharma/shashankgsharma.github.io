@@ -1,0 +1,11 @@
+- title: "Sparsity that pays for itself"
+  body: "Spiking networks only win if the silence is worth something. I work on event-based data and on finding the multimodal tasks where sparse, event-driven computation is genuinely cheaper, not just biologically flattering."
+
+- title: "Language, in spikes"
+  body: "Text is the awkward case for spiking networks: no natural event stream, long dependencies, dense embeddings. I am mapping where spiking language models actually break, which is more useful right now than another benchmark number."
+
+- title: "Adaptive neuron dynamics"
+  body: "Adaptive-LIF neurons move their own threshold as they fire. That gives a network a form of memory the weights never see, and I want to know how much of it can be relied on."
+
+- title: "Portability across neuromorphic stacks"
+  body: "SNNTorch, Lava, Rockpool and Sinabs each assume something different about time, reset and quantisation. A result that cannot survive the move between them is a result about a framework."

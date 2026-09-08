@@ -1,0 +1,10 @@
+{{ define "main" }}
+<div class="wrap wrap--narrow" style="padding-block:clamp(4rem,14vh,8rem);text-align:center">
+  <p class="eyebrow">Error 404</p>
+  <h1 class="display" style="margin-block:.5rem 1rem">Nothing here</h1>
+  <p class="lede" style="margin-inline:auto">This page doesn’t exist — it may have moved, or the link may be mistyped.</p>
+  <div class="link-row" style="justify-content:center;margin-top:2rem">
+    <a class="btn btn--primary" href="{{ "/" | relURL }}">{{ partial "icon.html" "arrow" }}Back home</a>
+  </div>
+</div>
+{{ end }}

@@ -1,0 +1,19 @@
+{{ define "main" }}
+{{ partial "page-head.html" . }}
+<div class="wrap">
+  <div class="entries">
+    {{- range .Pages.ByDate.Reverse }}
+    <article class="entry reveal">
+      <div class="entry__meta">{{ .Date.Format "02 Jan 2006" }}<br>{{ .ReadingTime }} min read</div>
+      <div>
+        <h3 class="entry__title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+        <p class="entry__desc">{{ .Params.summary | default .Summary }}</p>
+        {{- with .Params.tags }}
+        <div class="tags">{{ range first 4 . }}<span class="tag">{{ . }}</span>{{ end }}</div>
+        {{- end }}
+      </div>
+    </article>
+    {{- end }}
+  </div>
+</div>
+{{ end }}

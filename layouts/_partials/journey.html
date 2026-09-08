@@ -1,0 +1,62 @@
+{{- $j := site.Data.journey }}
+<div class="journey" data-journey>
+  <div class="journey__head">
+    <p class="eyebrow">Trajectory</p>
+    <p class="journey__caption">{{ $j.caption }}</p>
+  </div>
+
+  <!-- Nodes are somas; a spike runs the length of every axon. -->
+  <div class="journey__graph">
+    <svg viewBox="0 0 1000 296" preserveAspectRatio="xMidYMid meet" role="img"
+         aria-label="A graph of my trajectory: foundations, then an M.Tech at IIIT Delhi, branching into multimodal perception and language modelling, both feeding into neuromorphic work at TCS Research, then spiking language models, then a PhD.">
+      <g class="journey__edges">
+        {{- range $j.edges }}
+        <path class="jedge{{ if .open }} jedge--open{{ end }}" d="{{ .d }}" />
+        {{- if not .open }}<path class="jspike" d="{{ .d }}" />{{ end }}
+        {{- end }}
+      </g>
+      <g class="journey__nodes">
+        {{- range $j.nodes }}
+        <g class="jnode{{ if .current }} jnode--current{{ end }}{{ if .open }} jnode--open{{ end }}"
+           data-node="{{ .id }}"
+           data-period="{{ .period }}" data-title="{{ .title }}"
+           data-org="{{ .org }}" data-body="{{ .body }}"
+           tabindex="0" role="button" aria-label="{{ .title }}, {{ .period }}"
+           transform="translate({{ .x }},{{ .y }})">
+          <circle class="jnode__halo" r="24" />
+          <circle class="jnode__hit" r="30" />
+          <circle class="jnode__soma" r="10" />
+          <text class="jnode__label" text-anchor="middle"
+                y="{{ if eq .anchor "above" }}-36{{ else }}42{{ end }}">{{ .label }}</text>
+          <text class="jnode__sub" text-anchor="middle"
+                y="{{ if eq .anchor "above" }}-20{{ else }}58{{ end }}">{{ .sub }}</text>
+        </g>
+        {{- end }}
+      </g>
+    </svg>
+  </div>
+
+  <div class="journey__panel" data-journey-panel>
+    <p class="jpanel__period"></p>
+    <h3 class="jpanel__title"></h3>
+    <p class="jpanel__org"></p>
+    <p class="jpanel__body"></p>
+  </div>
+
+  <!-- The same graph as a list: no JS, and small screens -->
+  <ol class="journey__list">
+    {{- range $j.nodes }}
+    <li class="jitem{{ if .current }} jitem--current{{ end }}">
+      <button class="jitem__btn" type="button" data-jump="{{ .id }}"
+              aria-controls="j-{{ .id }}" aria-expanded="{{ if .current }}true{{ else }}false{{ end }}">
+        <span class="jitem__period">{{ .period }}</span>
+        <span class="jitem__title">{{ .title }}</span>
+      </button>
+      <div class="jitem__body" id="j-{{ .id }}">
+        <p class="jitem__org">{{ .org }}</p>
+        <p>{{ .body }}</p>
+      </div>
+    </li>
+    {{- end }}
+  </ol>
+</div>

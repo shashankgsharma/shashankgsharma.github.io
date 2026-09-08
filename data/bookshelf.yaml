@@ -1,0 +1,43 @@
+# The one-liners below describe each book, not my opinion of it.
+# Swap any of them for your own line whenever you feel like it.
+- title: "And Then There Were None"
+  author: "Agatha Christie"
+  year: 1939
+  spine: "clay"
+  height: 100
+  note: "Ten strangers on an island and a nursery rhyme counting down."
+
+- title: "The Silent Patient"
+  author: "Alex Michaelides"
+  year: 2019
+  spine: "slate"
+  height: 92
+  note: "A woman stops speaking after a murder. Her therapist will not let it go."
+
+- title: "Great Expectations"
+  author: "Charles Dickens"
+  year: 1861
+  spine: "ochre"
+  height: 100
+  note: "A boy comes into money and slowly loses track of who he was."
+
+- title: "To Kill a Mockingbird"
+  author: "Harper Lee"
+  year: 1960
+  spine: "sage"
+  height: 96
+  note: "A trial in Alabama, watched from the height of a child."
+
+- title: "The Alchemist"
+  author: "Paulo Coelho"
+  year: 1988
+  spine: "plum"
+  height: 88
+  note: "A shepherd walks to the pyramids to find what he left at home."
+
+- title: "The Monk Who Sold His Ferrari"
+  author: "Robin Sharma"
+  year: 1997
+  spine: "ink"
+  height: 94
+  note: "A burnt-out lawyer trades everything for a set of rules about living."

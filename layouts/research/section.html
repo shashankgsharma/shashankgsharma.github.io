@@ -1,0 +1,35 @@
+{{ define "main" }}
+{{ partial "page-head.html" . }}
+<div class="wrap">
+  {{ with .Content }}<div class="prose reveal" style="margin-bottom:clamp(2.5rem,6vw,4rem)">{{ . }}</div>{{ end }}
+
+  <section data-band="3" style="margin-bottom:clamp(2.5rem,6vw,4rem)">
+    <div class="section-head reveal"><h2>Themes</h2></div>
+    <div class="grid grid--2 reveal">
+      {{- range $i, $it := site.Data.interests }}
+      <div class="cell">
+        <span class="cell__num">{{ printf "%02d" (add $i 1) }}</span>
+        <h3>{{ $it.title }}</h3>
+        <p>{{ $it.body }}</p>
+      </div>
+      {{- end }}
+    </div>
+  </section>
+
+  <section data-band="4" style="margin-bottom:clamp(2.5rem,6vw,4rem)">
+    <div class="section-head reveal"><h2>Publications</h2></div>
+    {{ partial "pub-profiles.html" . }}
+    <div class="entries">
+      {{- range site.Data.publications }}{{ partial "pub-entry.html" . }}{{ end }}
+    </div>
+  </section>
+
+  <section data-band="5">
+    <div class="section-head reveal"><h2>Research projects</h2></div>
+    <div class="entries">
+      {{- $rp := where (where site.RegularPages "Section" "projects") "Params.ptype" "research" }}
+      {{- range $rp.ByDate.Reverse }}{{ partial "project-entry.html" . }}{{ end }}
+    </div>
+  </section>
+</div>
+{{ end }}

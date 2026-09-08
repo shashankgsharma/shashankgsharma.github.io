@@ -1,0 +1,20 @@
+<div class="shelf" data-shelf>
+  <div class="shelf__unit">
+    <div class="shelf__row">
+      {{- range site.Data.bookshelf }}
+      <button class="spine spine--{{ .spine }}" type="button"
+              style="--h: {{ .height }}%"
+              data-title="{{ .title }}" data-author="{{ .author }}"
+              data-year="{{ .year }}" data-note="{{ .note }}"
+              aria-label="{{ .title }} by {{ .author }}, {{ .year }}">
+        <span class="spine__text">{{ .title }}</span>
+        <span class="spine__rule" aria-hidden="true"></span>
+      </button>
+      {{- end }}
+    </div>
+    <div class="shelf__board" aria-hidden="true"></div>
+  </div>
+  <div class="shelf__caption" data-shelf-caption>
+    <p class="shelf__hint">{{ len site.Data.bookshelf }} spines. Point at one.</p>
+  </div>
+</div>

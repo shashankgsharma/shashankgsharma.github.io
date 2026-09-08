@@ -1,0 +1,37 @@
+{{ define "main" }}
+{{ partial "page-head.html" . }}
+<div class="wrap">
+  {{- $projects := .Pages.ByDate.Reverse }}
+  {{- $research := where $projects "Params.ptype" "research" }}
+  {{- $other := where $projects "Params.ptype" "!=" "research" }}
+
+  {{- if $research }}
+  <section data-band="3" style="margin-bottom:3.5rem">
+    <div class="section-head reveal"><h2>Research projects</h2></div>
+    <div class="entries">
+      {{- range $research }}{{ partial "project-entry.html" . }}{{ end }}
+    </div>
+  </section>
+  {{- end }}
+
+  {{- if $other }}
+  <section data-band="5">
+    <div class="section-head reveal"><h2>Engineering &amp; coursework</h2></div>
+    <div class="entries">
+      {{- range $other }}{{ partial "project-entry.html" . }}{{ end }}
+    </div>
+  </section>
+  {{- end }}
+
+  <section class="section" data-band="6" style="padding-bottom:0">
+    <div class="cta reveal">
+      <h2>More on GitHub</h2>
+      <p>Smaller experiments, coursework and tooling live in my repositories.</p>
+      <div class="link-row">
+        <a class="btn btn--ghost" href="{{ site.Params.github }}" target="_blank" rel="noopener">{{ partial "icon.html" "github" }}@shashank23088 — research</a>
+        <a class="btn btn--ghost" href="{{ site.Params.githubAlt }}" target="_blank" rel="noopener">{{ partial "icon.html" "github" }}@shashankgsharma — earlier work</a>
+      </div>
+    </div>
+  </section>
+</div>
+{{ end }}

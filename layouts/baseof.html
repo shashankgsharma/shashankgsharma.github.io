@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="{{ site.LanguageCode | default "en" }}" class="no-js">
+{{ partial "head.html" . }}
+<body>
+  <div class="bg-tint" aria-hidden="true"></div>
+  <div class="bg-net-wrap" aria-hidden="true"><canvas class="bg-net" data-neuro></canvas></div>
+  <a class="skip-link" href="#main">Skip to content</a>
+  {{ partial "header.html" . }}
+  <main id="main">
+    {{ block "main" . }}{{ end }}
+  </main>
+  {{ partial "footer.html" . }}
+  {{ $js := resources.Get "js/main.js" | js.Build (dict "minify" true) | fingerprint }}
+  <script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}" defer></script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+{{- $p := . }}
+<div class="page-head">
+  <div class="wrap">
+    <p class="eyebrow reveal">{{ $p.Params.eyebrow | default "Shashank Sharma" }}</p>
+    <h1 class="reveal" data-delay="60">{{ $p.Title }}</h1>
+    {{- with $p.Params.lede }}<p class="lede reveal" data-delay="120">{{ . }}</p>{{ end }}
+  </div>
+</div>

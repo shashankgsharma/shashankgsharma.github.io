@@ -1,0 +1,8 @@
+- group: "Languages"
+  items: ["Python", "C++"]
+- group: "Deep learning"
+  items: ["PyTorch", "Hugging Face", "LangChain", "ChromaDB", "Ollama"]
+- group: "Neuromorphic"
+  items: ["SNNTorch", "Lava", "Rockpool", "Sinabs"]
+- group: "Tooling"
+  items: ["Git", "Linux", "Streamlit", "OpenCV"]

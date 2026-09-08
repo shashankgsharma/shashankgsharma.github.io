@@ -1,0 +1,51 @@
+{{ define "main" }}
+<article class="wrap wrap--narrow" data-band="4">
+  <header class="article-head">
+    <p class="eyebrow reveal">{{ if eq .Params.ptype "research" }}Research project{{ else }}Project{{ end }}</p>
+    <h1 class="reveal" data-delay="60">{{ .Title }}</h1>
+    {{- with .Params.summary }}<p class="lede reveal" data-delay="120">{{ . }}</p>{{ end }}
+  </header>
+
+  {{- with .Params.authors }}
+  <p class="article-authors reveal">
+    {{- range $i, $a := (split . ", ") -}}
+      {{- if $i }}, {{ end -}}
+      {{- if eq $a "Shashank Sharma" }}<strong>{{ $a }}</strong>{{ else }}{{ $a }}{{ end -}}
+    {{- end -}}
+  </p>
+  {{- end }}
+
+  <div class="article-facts reveal">
+    {{- with .Params.timeline }}
+    <div class="fact"><div class="fact__label">Timeline</div><div class="fact__value">{{ . }}</div></div>
+    {{- end }}
+    {{- with .Params.affiliation }}
+    <div class="fact"><div class="fact__label">Where</div><div class="fact__value">{{ . }}</div></div>
+    {{- end }}
+    {{- with .Params.guide }}
+    <div class="fact"><div class="fact__label">Advisor{{ if in . "," }}s{{ end }}</div><div class="fact__value">{{ . }}</div></div>
+    {{- end }}
+    {{- with .Params.venue }}
+    <div class="fact"><div class="fact__label">Published</div><div class="fact__value">{{ . }}</div></div>
+    {{- end }}
+    {{- if or .Params.github .Params.paper }}
+    <div class="fact"><div class="fact__label">Links</div><div class="fact__value">
+      {{- with .Params.paper }}<a href="{{ . }}" target="_blank" rel="noopener">Paper</a>{{ end }}
+      {{- if and .Params.paper .Params.github }} · {{ end }}
+      {{- with .Params.github }}<a href="{{ . }}" target="_blank" rel="noopener">Code</a>{{ end }}
+    </div></div>
+    {{- end }}
+  </div>
+
+  <div class="prose reveal">{{ .Content }}</div>
+
+  {{- with .Params.tags }}
+  <div class="tags" style="margin-top:2.5rem">{{ range . }}<span class="tag">{{ . }}</span>{{ end }}</div>
+  {{- end }}
+
+  <nav class="post-nav">
+    <a href="{{ "/projects/" | relURL }}"><span>Back</span>All projects</a>
+    {{- with .NextInSection }}<a class="next" href="{{ .RelPermalink }}"><span>Next</span>{{ .Title }}</a>{{ end }}
+  </nav>
+</article>
+{{ end }}

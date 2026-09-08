@@ -1,0 +1,83 @@
+{{ define "main" }}
+{{ partial "page-head.html" . }}
+<div class="wrap">
+  <div style="display:grid;grid-template-columns:minmax(0,1fr);gap:clamp(2.5rem,6vw,4rem)">
+
+    {{ with .Content }}<div class="prose reveal">{{ . }}</div>{{ end }}
+
+    <section data-band="2">
+      <div class="section-head reveal"><h2>Experience</h2></div>
+      <div class="timeline">
+        {{- range site.Data.experience }}
+        <div class="tl-item reveal{{ if .current }} tl-item--current{{ end }}">
+          <p class="tl-item__date">{{ .period }}</p>
+          <h3 class="tl-item__role">{{ .role }}</h3>
+          <p class="tl-item__org">{{ .org }}{{ with .advisors }} · with {{ . }}{{ end }}</p>
+          <ul>{{ range .points }}<li>{{ . }}</li>{{ end }}</ul>
+        </div>
+        {{- end }}
+      </div>
+    </section>
+
+    <section data-band="3">
+      <div class="section-head reveal"><h2>Education</h2></div>
+      <div class="timeline">
+        {{- range site.Data.education }}
+        <div class="tl-item reveal">
+          <p class="tl-item__date">{{ .period }} · {{ .grade }}</p>
+          <h3 class="tl-item__role">{{ .degree }}</h3>
+          <p class="tl-item__org">{{ .org }}{{ with .focus }} · {{ . }}{{ end }}</p>
+        </div>
+        {{- end }}
+      </div>
+    </section>
+
+    <section data-band="4">
+      <div class="section-head reveal"><h2>Awards</h2></div>
+      <div class="entries">
+        {{- range site.Data.awards }}
+        <div class="entry reveal">
+          <div class="entry__meta">{{ .year }}</div>
+          <div>
+            <p class="entry__title" style="margin-bottom:.15rem">{{ .title }}</p>
+            <p class="entry__desc">{{ .org }}</p>
+          </div>
+        </div>
+        {{- end }}
+      </div>
+    </section>
+
+    <section data-band="5">
+      <div class="section-head reveal"><h2>Toolkit</h2></div>
+      <div class="entries">
+        {{- range site.Data.skills }}
+        <div class="entry reveal">
+          <div class="entry__meta">{{ .group }}</div>
+          <div class="tags" style="margin-top:0">{{ range .items }}<span class="tag">{{ . }}</span>{{ end }}</div>
+        </div>
+        {{- end }}
+      </div>
+    </section>
+
+    <section data-band="5">
+      <div class="section-head reveal"><h2>Shelf</h2></div>
+      <p class="lede reveal" style="font-size:1rem;margin-bottom:1.75rem">Fiction, mostly, and almost never about computers. What I have actually finished, rather than what I mean to read.</p>
+      <div class="reveal">{{ partial "bookshelf.html" . }}</div>
+    </section>
+
+    <section data-band="6">
+      <div class="cta reveal">
+        <h2>Get in touch</h2>
+        <p>{{ site.Params.ctaText }}</p>
+        <div class="link-row">
+          <a class="btn btn--primary" href="mailto:{{ site.Params.email }}">{{ partial "icon.html" "mail" }}{{ site.Params.email }}</a>
+          <a class="btn btn--ghost" href="{{ site.Params.scholar }}" target="_blank" rel="noopener">{{ partial "icon.html" "scholar" }}Scholar</a>
+          <a class="btn btn--ghost" href="{{ site.Params.orcid }}" target="_blank" rel="noopener">{{ partial "icon.html" "orcid" }}ORCID</a>
+          <a class="btn btn--ghost" href="{{ site.Params.linkedin }}" target="_blank" rel="noopener">{{ partial "icon.html" "linkedin" }}LinkedIn</a>
+          <a class="btn btn--ghost" href="{{ site.Params.cv | relURL }}" target="_blank" rel="noopener">{{ partial "icon.html" "file" }}CV</a>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+{{ end }}

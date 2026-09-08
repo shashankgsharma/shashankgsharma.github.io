@@ -35,7 +35,5 @@ A major building block in this field is the **Spiking Neural Network (SNN)**, wh
 
 As neuromorphic hardware and software frameworks mature, this area is becoming one of the most exciting frontiers in efficient and biologically inspired AI.
 
----
-
 If you're curious about practical tools in this space, frameworks like **SNNTorch**, **Lava**, and **Rockpool** provide a great starting point.
 

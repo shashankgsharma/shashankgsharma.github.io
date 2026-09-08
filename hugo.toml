@@ -1,88 +1,71 @@
 baseURL = "https://shashankgsharma.github.io/"
-languageCode = "en-us"
+languageCode = "en-gb"
 title = "Shashank Sharma"
-theme = "PaperMod"
 timeZone = "Asia/Kolkata"
+enableRobotsTXT = true
+summaryLength = 30
 
-# [pagination]
-#  pagerSize = 10
+# Taxonomy pages add noise without adding value on a site this size.
+disableKinds = ["taxonomy", "term"]
+
+[pagination]
+  pagerSize = 20
+
+[markup]
+  [markup.goldmark.renderer]
+    unsafe = true
+  [markup.highlight]
+    noClasses = false
+    style = "algol_nu"
+    lineNos = false
+    tabWidth = 2
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 3
 
 [params]
   author = "Shashank Sharma"
+  email = "shashank.0901sharma@gmail.com"
+  github = "https://github.com/shashank23088"
+  githubAlt = "https://github.com/shashankgsharma"
+  linkedin = "https://linkedin.com/in/shashankgsharma"
+  scholar = "https://scholar.google.com/citations?user=6faTSTcAAAAJ&hl=en"
+  orcid = "https://orcid.org/0009-0001-8159-2516"
+  orcidId = "0009-0001-8159-2516"
+  cv = "/files/resume.pdf"
 
-  # Homepage should show recent blog posts
-  mainSections = ["posts"]
+  role = "Research & Innovation Engineer"
+  affiliation = "TCS Research, Kolkata"
+  eyebrow = "Neuromorphic computing · Spiking neural networks"
 
-  # Theme
-  defaultTheme = "dark"
+  description = "Shashank Sharma builds spiking neural networks and the tooling that ports them between neuromorphic frameworks, at TCS Research. Previously multimodal perception and NLP at IIIT Delhi."
 
-  # Reading + Navigation
-  ShowReadingTime = true
-  ShowPostNavLinks = true
-  ShowBreadCrumbs = true
-  ShowCodeCopyButtons = true
+  tagline = "I build spiking neural networks, and the tooling that moves them between neuromorphic frameworks without quietly changing what they compute. At the moment I am trying to find where spiking models fail at language, and whether adaptive neurons are any help."
 
-  # Remove ugly social share bar (X, Reddit, FB etc.)
-  ShowShareButtons = false
+  ctaText = "I am applying to doctoral programmes in Europe for the Fall 2027 cycle. If your group works on neuromorphic hardware and algorithms, efficient deep learning, or spiking models for language and perception, I would be glad to send a longer version of any of this."
 
-  # Remove "Powered by Hugo & PaperMod" footer branding
-  hideFooter = true
+  researchKeywords = ["Neuromorphic computing", "Spiking neural networks", "Event-based data", "Adaptive LIF neurons", "Multimodal machine learning"]
 
-  # Social Icons (keep only professional ones)
-  [[params.socialIcons]]
-    name = "github"
-    url = "https://github.com/shashank23088"
+[[menu.main]]
+  name = "About"
+  url = "/about/"
+  weight = 1
 
-  [[params.socialIcons]]
-    name = "linkedin"
-    url = "https://linkedin.com/in/shashankgsharma"
+[[menu.main]]
+  name = "Research"
+  url = "/research/"
+  weight = 2
 
-  [[params.socialIcons]]
-    name = "email"
-    url = "mailto:shashank.0901sharma@gmail.com"
+[[menu.main]]
+  name = "Projects"
+  url = "/projects/"
+  weight = 3
 
+[[menu.main]]
+  name = "Writing"
+  url = "/posts/"
+  weight = 4
 
-# -------------------------------
-# Academic Researcher Homepage
-# -------------------------------
-[params.profileMode]
-  enabled = true
-
-  imageUrl = "/profile.jpg"
-  imageTitle = "Shashank Sharma"
-  imageWidth = 160
-  imageHeight = 160
-
-  title = "Shashank Sharma"
-
-  # Cleaner academic subtitle (not keyword spam)
-  subtitle = "Researcher @ TCS Research • NLP & GenAI • Neuromorphic Computing"
-
-  [[params.profileMode.buttons]]
-    name = "About"
-    url = "/about/"
-
-  [[params.profileMode.buttons]]
-    name = "CV"
-    url = "/files/resume.pdf"
-
-  [[params.profileMode.buttons]]
-    name = "Projects"
-    url = "/projects/"
-
-  [[params.profileMode.buttons]]
-    name = "Blog"
-    url = "/posts/"
-
-
-# -------------------------------
-# Favicon Setup
-# -------------------------------
-[params.assets]
-  favicon = "/favicon/favicon.ico"
-  favicon16x16 = "/favicon/favicon-16x16.png"
-  favicon32x32 = "/favicon/favicon-32x32.png"
-  apple_touch_icon = "/favicon/apple-touch-icon.png"
-  android_chrome192x192 = "/favicon/android-chrome-192x192.png"
-  android_chrome512x512 = "/favicon/android-chrome-512x512.png"
-
+[outputs]
+  home = ["HTML", "RSS"]
+  section = ["HTML", "RSS"]

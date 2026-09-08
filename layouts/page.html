@@ -1,0 +1,10 @@
+{{ define "main" }}
+<article class="wrap wrap--narrow" data-band="2">
+  <header class="article-head">
+    <p class="eyebrow reveal">{{ .Params.eyebrow | default "Page" }}</p>
+    <h1 class="reveal" data-delay="60">{{ .Title }}</h1>
+    {{- with .Params.lede }}<p class="lede reveal" data-delay="120">{{ . }}</p>{{ end }}
+  </header>
+  <div class="prose reveal">{{ .Content }}</div>
+</article>
+{{ end }}

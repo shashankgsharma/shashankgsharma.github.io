@@ -1,0 +1,28 @@
+{{- $p := . }}
+<article class="entry entry--pub reveal">
+  <div class="entry__meta">{{ $p.year }}<br>{{ $p.type }}</div>
+  <div>
+    <h3 class="entry__title">
+      {{- with $p.page }}<a href="{{ . | relURL }}">{{ $p.title }}</a>{{ else }}{{ $p.title }}{{ end -}}
+    </h3>
+    <p class="entry__authors">
+      {{- range $i, $a := $p.authors -}}
+        {{- if $i }}, {{ end -}}
+        {{- if eq $a "Shashank Sharma" }}<strong>{{ $a }}</strong>{{ else }}{{ $a }}{{ end -}}
+      {{- end -}}
+    </p>
+    <p class="entry__venue">{{ $p.venue }}{{ with $p.doi }} · doi:{{ . }}{{ end }}</p>
+    {{- with $p.contribution }}
+    <p class="entry__contrib"><span>My part</span>{{ . }}</p>
+    {{- end }}
+    <div class="entry__links">
+      {{- range $p.links }}
+        <a href="{{ .url }}" target="_blank" rel="noopener">{{ partial "icon.html" (default "link" .icon) }}{{ .name }}</a>
+      {{- end }}
+      {{- with $p.bibtex }}
+      <button class="linkbtn" type="button" data-bibtex="{{ . }}">{{ partial "icon.html" "file" }}<span>BibTeX</span></button>
+      {{- end }}
+      {{- with $p.page }}<a href="{{ . | relURL }}">{{ partial "icon.html" "arrow" }}Write-up</a>{{ end }}
+    </div>
+  </div>
+</article>
